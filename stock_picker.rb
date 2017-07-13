@@ -1,6 +1,6 @@
-def stock_picker(*array)
+def stock_picker(array)
 	array_item = 0
-	array_end = array.length - 1
+	array_end = array.length - 2
 	value1 = 0
 	value2 = 1
 	sum = 0
@@ -19,9 +19,12 @@ def stock_picker(*array)
 		value1 += 1
 		value2 += 1
 		array_item +=1
+		
 	end
 
-	puts "#{buy} + #{sell} = #{sum}"
+	puts "#{buy} - #{sell} = #{sum}"
 end
 
-stock_picker(7, 8, 3, 12, 89, 2)
+array1 = [9, 42, 2, 19, 3]
+
+stock_picker(array1)
